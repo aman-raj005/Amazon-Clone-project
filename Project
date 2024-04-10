@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Amazon.com</title>
+                <link rel="icon" type="image/x-icon" href="amazon-icon favicon.png"width="86px"height="84px">
+           <link rel="stylesheet" href="amazonweb.css">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                  <style>
+                                    
+*{   margin:0;      /**universal selector **/
+     font-family:Arial;
+     border:border-box;
+ }
+.navbar {           /**header **/
+         height:60px;
+         width:100%;
+         color: white;
+         background-color:#0f1111;
+         display: flex;
+         align-items:center;
+         justify-content: space-evenly;
+         overflow: hidden;
+        }
+
+.nav-logo {           /**amazon.com  logo div **/
+           height:55px;
+           width:113px;
+          }
+
+.logo  {               /**amazon.com  logo  **/
+        background-image: url("amazon_logo.png");
+        height: 50px;
+        width:100%;
+        background-size: cover;
+       }
+
+.border {           /**class-border ,for all div in nav. **/
+         border:1px solid transparent;
+         border-radius: 3px;
+        }
+
+.border:hover  {      /**2px border for hover in nav.bar. **/
+                 border:1px solid white;
+               }
+
+/** box 2 **/
+.nav-address {             /**deliver to india ,address **/
+               height: 52px;
+               width:90px;
+               text-align: center;
+               display:flex;
+               align-items:center;
+               flex-direction: column;
+               flex-wrap: wrap;
+             }
+
+.nav-address-box {
+                  padding: 4px;
+                  overflow-y: hidden;
+                 }
+
+#first-address {          /**address  deliver to pa.**/
+                 color:#cccccc;
+                 /* margin-left: 17px; */
+                 font-size:0.9rem;
+                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               }
+
+#second-address {        /**locat. with India  pa.**/
+                 font-family: serif;  
+                 font-size:1.1rem;
+                 display: flex;
+                 align-items: center;
+                }
+
+#location-logo {     /**location icon **/
+                width:15px;
+                height:18px;
+                margin-right:3px;
+               }
+
+
+/**box 3**/
+.nav-search {          /**search bar / box3 **/
+             width:640px;    /** 440 **/
+             height:60px;
+             display:flex;
+             align-items: center;
+             flex-shrink: 5;
+            }
+
+.select-all  {             /**all select option **/
+              width:52px;   
+              height:36.9px;
+              background-color:#c1bebe;
+              border-top-left-radius:5px ;
+              border-bottom-left-radius:5px ;
+              text-align: center;
+              border:none;
+            }
+
+.select-all:hover {      /**all select-hover option **/
+                   background-color:#aba6a6;
+                  }  
+
+.search-amazon  {     /**search bar **/
+                 width: 305px;
+                 height:35.9px;
+                 color: #0f1111;
+                 border: none;
+                 width:100%;
+                 font-size:1rem;
+                }
+  
+.search-amazon:hover{
+                     border:border-box;
+                     border:2px solid #febd69 ;
+                    }
+
+.search-icon  {         /**search bar **/
+                width: 30px;
+                height: 37px;
+                align-items: center;
+                display: flex;
+                background-color:#febd69 ;
+                border-top-right-radius:9px ;
+                border-bottom-right-radius:5px ;
+                padding-left: 8px;
+                color:#0f1111;
+               }
+
+/** box4**/
+.country  {  
+           height: 52px;
+           width:  70px;
+           display:flex;
+           justify-content: center;
+           align-items: center;
+          }
+
+.flag  { 
+         width:20px;
+         height: 15px;
+         border:none;
+         padding-left: 3px;
+       }
+
+.select-region{
+                 box-decoration-break: none;
+                 border:none;
+                 width: 40px;
+                 height:30px;
+                 background-color: #0f1111;
+                 color: white;
+                 font-weight: 900;
+                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               }
+
+/**4th box**/
+.sign-in { 
+          height: 52px;
+          width:  145px;
+          font-size: small;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-shrink: 1;
+         }
+
+.sign-in-box {
+              padding:8px;
+             }
+.hello-sign-in { 
+               padding-right: 50px;
+               display:flex;
+               flex-direction:flex-start;
+               font-size: 10px;
+               font-weight: lighter;
+               }
+
+.acc-listt-style {
+                   font-size: 13px;
+                   font-family:Arial;
+                   font-weight: bold;
+                 }
+
+#select-account {
+                 background-color: #0f1111;
+                 color:#c1bebe ;
+                 border: none;
+                 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+
+/**Box-5 nav **/
+
+.return-order {
+                height: 52px;
+                width:  85px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+    
+.return-order-box {
+                   padding:8px;
+                   text-align: center;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                  }
+
+.returns {
+           font-size: 10px;
+           font-weight: lighter;
+         }
+
+.orders  {
+          font-size: 12px;
+          font-family:Arial;
+          font-weight: bold;
+         }
+
+/**Box-6 nav **/
+.nav-cart { 
+            height: 52px;
+            width:  50px;
+            padding: 2px;
+            margin-right: 19px;
+          }
+
+.nav-cart-box {
+                height: 51px;
+                width:  49px;
+                display: flex; 
+                justify-content: center;    
+                align-items:center;          
+               }
+
+.nav-cart i { 
+             font-size:35px;     
+            }
+
+/**--------------------------2nd box--panel-------------**/
+ 
+/** box-1 --------**/
+
+.panel    {
+           width:100%;
+           height:39px;
+           background-color:#222a34 ;
+           color:#c1bebe;
+           display: flex;
+           font-size: 0.8rem;
+          }
+
+.panel-all   {
+              width:60px;
+              height:37px;  
+              display:flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;         
+             }
+
+.panel-all-box {
+                 width:50px;
+                 height:23px;
+                 display:flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 align-items: center;
+                 column-gap: 7px;
+                 font-weight: bold;
+               }
+
+.panel-all-box i  {
+                     font-size: 19px;
+                  }
+  
+    /** box-2 --------**/
+
+.other-pannel-options    {
+                           width:125px;  
+                           height:37px;  
+                           display:flex;
+                           flex-direction: row;
+                           justify-content: center;
+                           align-items: center;                  
+                         }
+ /** box-2 --------**/
+
+ .other-pannel-customer   
+                            {
+                             width:115px;  
+                             height:37px;  
+                             display:flex;
+                             flex-direction: row;
+                             justify-content: center;
+                             align-items: center;                  
+                            }
+
+ .other-pannel-registry   
+                          {
+                           width:75px;  
+                           height:37px;  
+                           display:flex;
+                           flex-direction: row;
+                           justify-content: center;
+                           align-items: center;                  
+                           }
+
+.other-pannel-giftcards   
+                          {
+                            width:65px;  
+                            height:37px;  
+                            display:flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;  
+                           }
+
+.other-pannel-sell   
+                      {
+                              width:35px;  
+                              height:37px;  
+                              display:flex;
+                              flex-direction: row;
+                              justify-content: center;
+                              align-items: center; 
+                                            
+                      }
+
+.blank-nav    {   
+                width:50%;
+              }
+
+/** -------------------------hero div--------------------------------------------------------------------**/
+.hero-div  {
+             width:100%;
+             background-image: url(61lwJy4B8PL._SX3000_.jpg);
+             height:300px;
+             background-size: cover;
+             display: flex;
+             justify-content: center;
+            }
+
+.hero-div-box i {  display:flex;
+                   justify-content: left;
+                }
+
+.hero-information  {
+                      width:95%;
+                      height:43px;
+                      background-color: whitesmoke;
+                      font-size: 14px;
+                      display: flex;
+                      position:static;
+                      justify-content: center;
+                      align-items: center;
+                      margin-top: 230px;
+                   }
+
+.inform-color-a   {
+                     color: #007180;
+                  }
+ 
+
+/** ------------------------------shop-items --------------------------------------------------------------------------------------**/
+.sell-items  {
+                width:100%;
+                height: 850px;     /** 750**/
+                background-color: #efeded;
+               
+             }
+
+.sell-items-box   {
+                    width:100%;
+                    height: 845px;               /** 750**/
+                    /* border:2px solid black; */
+                    box-sizing:border-box;
+                    display: flex;
+                    flex-direction: space-around;
+                    justify-content: space-evenly;
+                    align-items: space-evenly;
+                    /* gap:30px; */
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding-top:20px ;
+
+                  }
+
+.item {
+          
+      
+      width:280px;
+      height:400px;                    /** 750**/
+      /* border:2px solid black; */
+      display: flex;
+      flex-direction: column;
+      background-color:white; }
+
+
+
+      /** new added **/
+.image-box{
+        background-color:white;
+        height:310px;           /** 290**/
+        padding-left: 18px;
+        padding-right: 18px;
+        object-fit: cover;
+        border-image: cover;
+     
+   }
+.title{
+       height: 41px;
+       display:flex;
+       font-size:14px ;
+       justify-content: flex-start;
+       padding-left: 16.5px;
+       align-items: center;
+    }
+
+.title--1{
+           color:#007180;
+           display: flex;
+           justify-content: flex-start;
+           padding-left: 16.5px;
+           padding-top: 16px;
+           font-size: 13px;
+           
+}
+
+
+/** -----------------------footer--------------------------------------------------------------------------------------**/
+.footer  {
+            width:100%;
+            height: 518px;
+            margin-top: 4px;
+            /* height:500px; */
+          }
+          /** panel --1 **/
+.footer-panel-1  {
+                   width:100%;
+                   background-color: #37475a; 
+                   color:white;
+                   height:50px;
+                   font-size: 0.9rem; 
+                   display: flex;   
+                   justify-content: center;
+                   align-items: center;
+                   font-weight: 610;
+                 }
+
+   /** panel --2 **/
+
+.title-ul        {
+                    font-size:16px ;
+                    font-weight: 900;
+                    padding-top: 49px;
+                    padding-bottom: 11px;
+
+                 }
+
+.first-box-un {
+                list-style-type: none;
+              }
+
+.footer-panel-2 {
+                   height: 400px; /**440**/
+                   display:flex;
+                   justify-content: space-evenly;
+                   background-color:#222a34 ;
+                   color:#c1bebe;
+           
+                }
+
+li   {
+            display: block;
+            font-size: 14px ;
+            padding: 6px;
+            font-weight: 600;
+       }
+
+  /**---------------------------------------------- panel --4---------------------------------------------- **/
+ 
+.footer-panel-4{
+                  width:100%;
+                  height:100px;
+                  background-color:#222a34 ;
+                  display:flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-top: 0.01px solid aliceblue;;
+                  gap:10px;
+                
+                }
+
+.footer-amazon-logo  {
+                        padding-right: 23px;
+                     }
+
+.cho-language  {
+                   width: 125px;
+                   height: 34px  ;
+                   color:white;
+                   border: 1px solid white;
+                   border-radius: 4%;
+                   display: flex;
+                   align-items: center;
+                   flex-direction: flex-start;
+                   gap: 8px;
+                   padding-left: 15px;    
+               }
+
+.select-langg  {
+                 background-color:#222a34  ;
+                 border: none;
+                 color: aliceblue;
+               }
+
+.cho-currency   {
+                  width: 155px;
+                  height: 34px  ;
+                  color: aliceblue;
+                  border: 1px solid white;
+                  border-radius: 4%;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: flex-start;
+                  padding-left: 3px;
+                  font-size: 16px;
+                 }
+
+.choose-countryy   {
+                  width: 105px;
+                  height: 34px  ;
+                  color: aliceblue;
+                  border: 1px solid white;
+                  border-radius: 4%;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: flex-start;
+                  padding-left: 3px;
+                  font-size: 16px;
+                  gap:8px;
+                 }
+
+/**---------------------------------------------- panel --5---------------------------------------------- **/
+
+.footer-panel-5  {
+                   width:100%;
+                   height:24px;
+                   background-color:#0f1111 ;
+                   color: aliceblue;
+                   display: flex;
+                   justify-content: center;
+                   align-items: flex-end;
+                   font-size: 12px;
+                   gap:13px;
+                   
+                 }
+
+/**---------------------------------------------- panel --6---------------------------------------------- **/
+
+.footer-panel-6  {
+                    width:100%;
+                    height:19px;
+                    background-color:#0f1111 ;
+                    color: aliceblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    font-size: 12px;
+                    gap:3px;
+                  }
+
+/**---------------------------------------------- panel --7---------------------------------------------- **/
+
+.footer-panel-7  {
+                    padding-top: 2px;
+                    width:100%;
+                    height:18px;
+                    background-color:#0f1111 ;
+                   
+                  }
+
+
+                  </style>
+
+
+      </head>
+  <body class="body">
+    <header>
+      <div class="navbar"> <!--header-->
+
+    <!--box 1 in nav bar -->
+        <div class="nav-logo border"> <!--Amazon logo-->
+          <div class="logo"> 
+          </div>
+        </div>
+
+     <!--box 2 in nav bar -->
+        <div class="nav-address border"> <!--Deliver to india address-->
+            <div class="nav-address-box">  
+            <div id="first-address">Deliver to
+                  </div>
+               <div id="second-address">
+                  <div id="location-logo"> <i class="fa-solid fa-location-crosshairs"></i>
+                  </div>
+                  <b>  India  </b> 
+                </div> 
+                </div> 
+       </div>
+
+     <!--box 3 in nav bar -->
+       <div class="nav-search ">
+            <select class="select-all">
+               <option>All   
+               </option>
+            </select>
+                    <input placeholder="Search  Amazon" class="search-amazon" >
+            <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+       </div>
+      
+       <div class="country border">
+           
+            <img src="download indian flag.jpeg"class="flag">
+            <select name="region" class="select-region">
+                <option value="india">IN</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Sri-lanka">Sri-lanka</option>
+                <option value="Nepal">Nepal</option>
+              </select>
+       </div>
+
+     <!--4th box in nav-->
+        <div class="sign-in border">
+            <div class="sign-in-box">
+              <p class="hello-sign-in"> Hello, sign in </p>
+             <div class="account-list">
+                <label for="select-account" class="acc-listt-style">Account & Lists</label>
+                <select name="Account & Lists"id="select-account">
+                <option value="firstmail@gmail.com"></option>
+                <option value="secondmail@gmail.com"></option> 
+                </select>
+             </div>
+            </div>
+    </div>
+   <!--box 5 in nav-->
+
+            <div class="return-order border">
+               <div class="return-order-box">
+                 <div class="returns"> Returns
+                 </div>
+                 <div class="orders">
+                  &Orders
+                 </div>
+             </div> 
+           </div>
+
+   <!--box 6 in nav-->
+              <div class="nav-cart border">
+                <div class="nav-cart-box">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+              </div>
+    
+            </div>
+
+    <!------------------------------2nd box  panel------------------------------------------------------------------------------------>
+   
+      <div class="panel">
+         <!--box-1-->
+          <div class="panel-all border" >
+               <div class="panel-all-box">
+                  <i class="fa-solid fa-bars">
+                  </i>
+                  All 
+               </div>
+          </div>
+       
+  <!--box-2-->
+               <div class="other-pannel-options border" >
+                   <div class="other-pannel-options-box">
+                     Today's Deals
+                   </div>
+               </div>
+               
+  <!--box-3-->
+
+          <div class="other-pannel-customer border" >
+              <div class="other-pannel-customer">
+                 Customer Service
+              </div>
+          </div> 
+  <!--box-4-->
+   
+           <div class="other-pannel-registry border" >
+               <div class="other-pannel-registry-box">
+                Registry
+               </div>
+           </div>
+  <!--box-5-->
+ 
+           <div class="other-pannel-giftcards border" >
+                <div class="other-pannel-giftcards">
+                  Gift Cards
+                </div>
+           </div>
+  
+ <!--box-6-->
+          <div class="other-pannel-sell border" >
+               <div class="other-pannel-sell">
+                Sell
+               </div>
+          </div>
+
+      <!----div for blank-->
+                 <div class="blank-nav">
+                 </div>
+
+             </div> 
+
+     </header>
+
+   <!--hero diiv-------------------------------------------------------------------------------------------------------------------->
+
+     <div class="hero-div">
+
+          <div class="hero-information">
+                <p class="hero-div-box"> You are on amazon.com. You can also shop   on Amazon India for millions of products with fast local delivery.
+                 <a href="www.amazon.in"class="inform-color-a"> 
+                 Click here to go to amazon.in </a>
+                </p>
+          </div>
+
+     </div>
+  
+<!-- ---------shop-items-------------------------------------------------------------------------------------------------------------->
+     <div class="sell-items">
+        
+             <div class="sell-items-box">
+                <!------------------------------------------------item1------------------------------------------------->
+                    <div class="item1 item">
+
+                      <div class="title"><h2>Deals in PCs</h2></div>
+                      <img src="Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg" class="image-box">
+                      <div class="title--1">Shop Now</div>
+                   
+
+                    </div>
+
+              <!------------------------------------------------item2------------------------------------------------->
+
+                    <div class="item2 item">
+
+                      <div class="title"><h2>Electronics</h2></div>
+                             <img src="box4_image.jpg" class="image-box">
+                             <div class="title--1">Shop Now</div>
+
+                   </div>
+               <!------------------------------------------------item3------------------------------------------------->
+                    <div class="item3 item">
+
+                         <div class="title"><h2>Toys under $25</h2></div>
+                         <img src="Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg" class="image-box">
+                         <div class="title--1">Shop Now</div>
+                  
+                    </div>
+
+                <!------------------------------------------------item4------------------------------------------------->
+
+                    <div class="item4 item">
+                        <div class="title"><h2>Home décor under $50</h2></div>
+                        <img src="Fuji_Desktop_Single_image_EBF_2x_v6._SY608_CB573698005_.jpg" class="image-box">
+                        <div class="title--1">Shop Now</div>
+                    </div>
+               
+                <!------------------------------------------------item5------------------------------------------------->
+
+                    <div class="item5 item">
+                        <div class="title"><h2>Refresh your space</h2></div>
+                        <img src="DesktopQuadCat_372x232_LP-HP_B08MYX5Q2W_01.23._SY232_CB619238939_.jpg" class="image-box">
+                        <div class="title--1">Shop Now</div>
+                    </div>
+
+               <!------------------------------------------------item6------------------------------------------------->
+
+                    <div class="item6 item">
+                        <div class="title"><h2>Health And Care</h2></div>
+                        <img src="box5_image.jpg" class="image-box">
+                        <div class="title--1">Shop Now</div>
+                    </div>
+
+                <!------------------------------------------------item7------------------------------------------------->
+
+                    <div class="item7 item">
+                         <div class="title"><h2>Furniture</h2></div>
+                         <img src="box3_image.jpg" class="image-box">
+                         <div class="title--1">Shop Now</div> 
+                    </div>
+          
+                 <!------------------------------------------------item8------------------------------------------------->
+
+
+                    <div class="item8 item">
+                           <div class="title"><h2>Faishon Trends</h2></div>
+                          <img src="box8_image.jpg" class="image-box">
+                          <div class="title--1">Shop Now</div>
+                    </div>
+
+             </div>
+
+     </div>
+    
+<!----------------------------footer----------------------------------------------------------------------------------------------->
+          <div class="footer">
+    
+                 <div class="footer-panel-1">
+                        Back to top
+                 </div>  
+
+ <!------------------------------------------------footer-panel-2------------------------------------------------->
+
+                 <div class="footer-panel-2">
+
+                       <ul class="first-box-un">
+                             <li class="title-ul"> Get to Know Us </li> 
+                             <li> Careers </li> 
+                             <li> Blog </li>
+                             <li> About Amazon </li> 
+                             <li> Investor Relations </li> 
+                             <li> Amazon Devices </li> 
+                             <li> Amazon Science </li> 
+                       </ul>
+
+                       <ul class="first-box-un">
+                           <li class="title-ul"> Make Money with Us </li> 
+                           <li> Sell products on Amazon</li> 
+                           <li> Sell on Amazon Business</li>
+                           <li> Sell apps on Amazon </li> 
+                           <li> Become an Affiliate </li> 
+                           <li> Advertise Your Products</li> 
+                           <li> Self-Publish with Us </li> 
+                           <li> Host an Amazon Hub</li> 
+                           <li> See More Make Money with Us</li> 
+                     </ul>
+
+                     <ul class="first-box-un">
+                          <li class="title-ul">Amazon Payment Products </li> 
+                          <li> Amazon Business Card </li> 
+                          <li> Shop with Points </li>
+                          <li> Reload Your Balance</li> 
+                          <li> Amazon Currency Converter </li> 
+                    </ul>
+
+                    <ul class="first-box-un">
+                         <li class="title-ul"> Let Us Help You </li> 
+                        <li> Amazon and COVID-19 </li> 
+                        <li> Your Account </li>
+                        <li> Your Orders </li> 
+                        <li> Shipping Rates & Policies </li> 
+                        <li> Returns & Replacements </li> 
+                        <li> Manage Your Content and Devices </li> 
+                        <li>  Amazon Assistant</li>
+                        <li>   Help</li>
+                      </ul>
+
+                 </div>
+
+ <!------------------------------------------------footer-panel-3------------------------------------------------->
+
+        <div class="footer-panel-4">
+                
+
+                 <div class="footer-amazon-logo">        
+                    <div class="logo-amazon">   <!--Amazon logo-->
+                        <div class="nav-logo "> 
+                           <div class="logo"> 
+                           </div>
+                        </div>
+                    </div>
+                </div> 
+
+                 <div class="cho-language">
+                      <i class="fa-solid fa-globe"></i>
+                      English
+                      <select class="select-langg"></select>
+                  </div>
+
+                 <div class="cho-currency">
+                     <pre> ₹  IND - Rupees  </pre> 
+                 </div>
+
+                 <div class="choose-countryy">
+                    <img src="download indian flag.jpeg"class="flag">
+                     India
+                 </div>
+            
+      </div>
+        
+<!------------------------------------------------footer-panel-5------------------------------------------------->
+      
+          <div class="footer-panel-5">
+ 
+                <p> Conditions of Use </p>
+                <p>Privacy Notice </p>
+                <p> Consumer Health Data Privacy Disclosure </p>
+                <p> Your Ads Privacy Choices </p>
+
+          </div>
+
+<!------------------------------------------------footer-panel-6------------------------------------------------->
+
+            <div class="footer-panel-6">
+
+                <i class="fa-regular fa-copyright"></i>
+                 <div> 1996-2024, Amazon.com, Inc. or its affiliates </div> 
+
+            </div>
+<!------------------------------------------------footer-panel-7------------------------------------------------->
+            <div class="footer-panel-7">
+            </div>
+
+  <!------------------------------------------------footer------------------------------------------------->
+   </div>
+
+ <!------------------------------------------------------------------------------------------------------------------------------------>  
+</body>
+</html>
